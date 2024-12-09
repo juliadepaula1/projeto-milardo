@@ -1,0 +1,98 @@
+* {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+body {
+    background-image: url('img/wallpaper');
+    background-size: cover;
+    background-attachment: fixed;
+    color: #333;
+}
+
+
+
+h1, h2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+#cta {
+    background-image: url('img/wallpaper');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 50px 0;
+}
+
+.sobre {
+    background-color: #1e1e1e;
+    text-align: center;
+}
+.sobre h3 {
+    color: #f1f1f1;
+    font-weight: bold;
+}
+
+.sobre p {
+    color: #f1f1f1;
+    border: 12px;
+    text-align: center;
+    padding: 0;
+}
+.endereco p {
+
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#localizacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: #f8f9fa;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+.col-md-6 {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 200px;
+    max-width: 400px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    width: 350px;
+    height: auto;
+}
+.card-title {
+    font-size: 1.25rem;
+    color: #ad1f1f;
+    font-weight: bold;
+    text-align: center;
+}
+#beneficios .card .card-title {
+    /* Adicione as propriedades de estilo desejadas aqui */
+    font-size: 1.5rem; /* Exemplo de alteração */
+    color: #333; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+
+}
+
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
