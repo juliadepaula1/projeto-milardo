@@ -112,7 +112,6 @@
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Lote 3</h5>
                                     <p class="card-text">R$ 100,00</p>
-                                    <div id="countdown" class="mb-3" style="font-size: 1.25rem; color: #A62639;"></div>
                                     <a href="#contato" class="btn btn-success">Comprar</a>
                                 </div>
                             </div>
@@ -175,32 +174,6 @@
                     </section>
         </main>
         
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-             const countdownDate = new Date();
-    countdownDate.setDate(countdownDate.getDate() + (3 - countdownDate.getDay() + 7) % 7); // Próxima quarta-feira
-    countdownDate.setHours(0, 0, 0, 0); // Meia-noite
-
-    function updateCountdown() {
-        const now = new Date().getTime();
-        const timeLeft = countdownDate - now;
-
-        if (timeLeft <= 0) {
-            document.getElementById("countdown").innerHTML = "O prazo terminou!";
-            clearInterval(interval);
-            return;
-        }
-
-        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-        document.getElementById("countdown").innerHTML = 
-            `${days}d ${hours}h ${minutes}m ${seconds}s`;
-    }
-
-    // Atualiza a contagem regressiva a cada segundo
-    const interval = setInterval(updateCountdown, 1000);
-        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
