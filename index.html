@@ -5,42 +5,42 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Landing Page - Old Ink Tattoo Workshop</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
-        <link rel="stylesheet" href=css/style.css>
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
         <div>
             <nav class="navbar navbar-expand-lg" style="background-color: #A62639;">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img src="img/logo.png" width="110" height="70">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon" style="color: white;"></span>
-                </button>
-                
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#sobre">Sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#contato">Contato</a>
-                        </li>
-                        <button type="button" class="btn btn-warning">Garanta seu ingresso!</button>
-                    </ul>
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo.png" width="110" height="70">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon" style="color: white;"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#sobre">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#contato">Contato</a>
+                            </li>
+                            <button type="button" class="btn btn-warning" onclick="window.location.href='#contato'">Garanta seu ingresso!</button>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav></div>
+            </nav>
+        </div>
 
         <main>
             <div id="cta" class="py-5" style="background-color: #FFD400;">
                 <div class="container text-center">
                     <img src="img/tatoo.png" alt="Logo do evento" class="img-fluid">
                     <h2 class="mt-4">Sinta a nostalgia na tinta e na caneca!</h2>
-                    <a href="#beneficios" class="btn btn-primary btn-lg" style="background-color: #008080; border-color: #006666;">Garanta o seu ingresso</a>
+                    <a href="#contato" class="btn btn-primary btn-lg" style="background-color: #008080; border-color: #006666;">Garanta o seu ingresso</a>
                 </div>
             </div>
             
@@ -50,7 +50,7 @@
                     <p>Prepare-se para vivenciar o Old Ink Tattoo Workshop, um evento que celebra a arte da tatuagem de forma única e memorável. Em parceria com o bar vintage Chega aí! e o renomado estúdio InkLina, trazemos para você uma experiência inigualável. Desfrute de um dia repleto de aprendizado e nostalgia, com acesso a workshops que vão desde técnicas avançadas de tatuagem até degustação de cervejas artesanais servidas em canecas exclusivas. É o encontro perfeito entre a arte do estúdio e o charme do bar, criando um ambiente vibrante onde tatuadores e entusiastas podem se conectar e celebrar sua paixão. Não perca essa oportunidade de fazer parte desse evento épico!</p>
                 </div>
             </section>
-            
+
             <section id="beneficios" class="py-5" style="background-image: url('img/wallpaper.jpg');">
                 <div class="container">
                     <div class="row g-4">
@@ -67,7 +67,7 @@
                             <div class="card h-100">
                                 <img src="img/tecnica.jpg" class="card-img-top" alt="Benefício 2">
                                 <div class="card-body">
-                                    <h5 class="card-title" style="color: #A62639;" >Área dos veteranos</h5>
+                                    <h5 class="card-title" style="color: #A62639;">Área dos veteranos</h5>
                                     <p class="card-text">Aprimore suas técnicas com o stippling, o método de sombreamento mais detalhado e artístico do mundo da tatuagem. Desafie suas habilidades e descubra novos níveis de excelência com os melhores instrutores.</p>
                                 </div>
                             </div>
@@ -84,7 +84,7 @@
                     </div>
                 </div>
             </section>
-    
+
             <section id="lotes" class="py-5" style="background-color: #1A535C;">
                 <div class="container text-white">
                     <h2 class="text-center mb-4">Lotes</h2>
@@ -112,19 +112,20 @@
                                 <div class="card-body text-center">
                                     <h5 class="card-title">Lote 3</h5>
                                     <p class="card-text">R$ 100,00</p>
-                                    <a href="#" class="btn btn-success">Comprar</a>
+                                    <div id="countdown" class="mb-3" style="font-size: 1.25rem; color: #A62639;"></div>
+                                    <a href="#contato" class="btn btn-success">Comprar</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            
+
             <div class="container py-5">
                 <div class="row g-4 d-flex justify-content-center">
                     <div class="col-md-6">
                         <div class="card h-100" style="background-color: #eee;">
-                            <img src="img/localizacao.jpg" class="card-img-top" alt="Localização do Evento" style="text-align: center; color: #1A535C; font-weight: bold; font-size: 1.5em;">
+                            <img src="img/localizacao.jpg" class="card-img-top" alt="Localização do Evento">
                             <div class="card-body text-center">
                                 <p class="card-text">Rua da Tatuagem, 123 - Bairro das Artes</p>
                                 <a href="https://www.google.com/maps?q=Rua+da+Tatuagem,123,Bairro+das+Artes" class="btn btn-primary" target="_blank">Ver no Mapa</a>
@@ -132,19 +133,74 @@
                         </div>
                     </div>
                 </div>
-            </div>    
-        </main>
-        <footer id="contato" class="text-center text-white py-4" style="background-color: #4E3629;">
-            <p>Siga-nos:</p>
-            <a href="#" class="text-white me-3">
-                <img src="instagram.png" alt="Instagram" width="30">
-            </a>
-            <a href="#" class="text-white">
-                <img src="facebook.png" alt="Facebook" width="30">
-            </a>
-            <p class="mt-3">Old Ink Tattoo Workshop © 2024</p>
-        </footer>
+            </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+                    <section id="contato" class="py-5" style="background-color: #FFD400;">
+                        <div class="container text-black">
+                            <h2 class="text-center mb-4">Pagamento</h2>
+                            <form action="#" method="post" class="bg-light p-4 rounded shadow-sm">
+                                <div class="mb-3">
+                                    <label for="nome" class="form-label">Nome</label>
+                                    <input type="text" class="form-control" id="nome" name="nome" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telefone" class="form-label">Telefone</label>
+                                    <input type="tel" class="form-control" id="telefone" name="telefone" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="lote" class="form-label">Selecione um lote</label>
+                                    <select class="form-select" id="lote" name="lote" required>
+                                        <option value="" disabled selected>Escolha um lote</option>
+                                        <option value="1" disabled>Lote 1 (Esgotado)</option>
+                                        <option value="2" disabled>Lote 2 (Esgotado)</option>
+                                        <option value="3">Lote 3 - R$ 100,00</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="pagamento" class="form-label">Forma de Pagamento</label>
+                                    <select class="form-select" id="pagamento" name="pagamento" required>
+                                        <option value="" disabled selected>Selecione uma forma de pagamento</option>
+                                        <option value="boleto">Boleto Bancário</option>
+                                        <option value="cartao">Cartão de Crédito</option>
+                                        <option value="pix">Pix</option>
+                                    </select>
+                                </div>
+                                <button type="submit" class="btn btn-warning w-100">Prosseguir</button>
+                            </form>
+                        </div>
+                    </section>
+        </main>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+             const countdownDate = new Date();
+    countdownDate.setDate(countdownDate.getDate() + (3 - countdownDate.getDay() + 7) % 7); // Próxima quarta-feira
+    countdownDate.setHours(0, 0, 0, 0); // Meia-noite
+
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const timeLeft = countdownDate - now;
+
+        if (timeLeft <= 0) {
+            document.getElementById("countdown").innerHTML = "O prazo terminou!";
+            clearInterval(interval);
+            return;
+        }
+
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown").innerHTML = 
+            `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    // Atualiza a contagem regressiva a cada segundo
+    const interval = setInterval(updateCountdown, 1000);
+        </script>
     </body>
 </html>
